@@ -3,7 +3,7 @@ import React from "react";
 import { FiSettings } from "react-icons/fi";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Navbar, Sidebar } from "./components";
+import { Navbar, Sidebar, ThemeSettings } from "./components";
 import { useStateContext } from "./context/ContextProvider";
 import {
   Area,
@@ -58,6 +58,10 @@ const App = () => {
           >
             <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
               <Navbar />
+            </div>
+
+            <div>
+              <ThemeSettings />
             </div>
 
             {/* Routing */}
