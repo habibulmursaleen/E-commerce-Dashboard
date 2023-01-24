@@ -51,7 +51,6 @@ const ThemeSettings = () => {
               className="cursor-pointer"
               checked={currentMode === "Dark"}
             />
-            5345{" "}
             <label htmlFor="dark" className="ml-2 text-md cursor-pointer">
               Dark
             </label>

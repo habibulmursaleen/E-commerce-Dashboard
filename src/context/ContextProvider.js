@@ -25,6 +25,7 @@ export const ContextProvider = ({ children }) => {
   const setColor = (color) => {
     setCurrentColor(color);
     localStorage.setItem("colorMode", color);
+    setThemeSettings(false);
   };
 
   const handleClick = (clicked) =>
