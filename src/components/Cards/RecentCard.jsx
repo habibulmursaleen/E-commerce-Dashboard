@@ -1,8 +1,9 @@
 import { DropDownListComponent } from "@syncfusion/ej2-react-dropdowns";
 import React from "react";
-import { Button, LineChart } from "../../components";
+import { Button } from "../../components";
 import { useStateContext } from "../../context/ContextProvider";
 import { dropdownData, recentTransactions } from "../../data/dummy";
+import Area from "../Charts/Area";
 
 const DropDown = ({ currentMode }) => (
   <div className="w-28 border-1 border-color px-2 py-1 rounded-md">
@@ -64,12 +65,12 @@ const RecentCard = () => {
         </div>
       </div>
       <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg p-6 rounded-2xl w-96 md:w-760">
-        <div className="flex justify-between items-center gap-2 mb-10">
+        <div className="flex justify-between items-center gap-2 mb-10 w-auto">
           <p className="text-xl font-semibold">Sales Overview</p>
           <DropDown currentMode={currentMode} />
         </div>
         <div className="md:w-full overflow-auto">
-          <LineChart />
+          <Area />
         </div>
       </div>
     </div>
